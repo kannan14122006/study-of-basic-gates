@@ -63,17 +63,40 @@ Y= A⊕B
 
 
 **PROGRAM**
-
+```
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: RegisterNumber: 
- 
+ Developed by: KANNAN R
+ RegisterNumber: 24900979
+ ```
+```
+//expt3a-full adder
+module fulladder(sum, cout, a, b, cin);
+    output sum;
+    output cout;
+    input a;
+    input b;
+    input cin;
+	 wire w1,w2,w3;
+	 assign w1=a^b;
+	 assign w2=a&b;
+	 assign w3=w1&cin;
+	 assign sum=w1^cin;
+	 assign cout=w2|w3;
+endmodule
+```
 **Logic symbol & Truthtable**
 
 **RTL realization Output:** 
+![Screenshot 2024-11-14 134849](https://github.com/user-attachments/assets/f32fe71e-6114-401e-a5c8-9e0ede4f032e)
+
 
 **RTL**
+![Screenshot (3) - Copy](https://github.com/user-attachments/assets/a90e8adc-25b3-42ff-9a1d-caa8b1ef4a9f)
+
+
 
 **Result:**
+thus the basic logic gates are sutied and the truth tables are verified
 
 
