@@ -68,33 +68,28 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
 
  Developed by: KANNAN R
  RegisterNumber: 24900979
- ```
-```
-//expt3a-full adder
-module fulladder(sum, cout, a, b, cin);
-    output sum;
-    output cout;
-    input a;
-    input b;
-    input cin;
-	 wire w1,w2,w3;
-	 assign w1=a^b;
-	 assign w2=a&b;
-	 assign w3=w1&cin;
-	 assign sum=w1^cin;
-	 assign cout=w2|w3;
-endmodule
+ ```  
+module Ex01(a,b,c);
+ input a;
+ input b;
+ output [6:0]c;
+ assign c[0]=a&b;
+ assign c[1]=a|b;
+ assign c[2]=~(a&b);
+ assign c[3]=~(a|b);
+ assign c[4]=a^b;
+ assign c[5]=~(a^b);
+ assign c[6]=~a;
+ endmodule
 ```
 **Logic symbol & Truthtable**
+![WhatsApp Image 2024-12-02 at 22 10 01_2fd85f46](https://github.com/user-attachments/assets/8db492c8-9659-4393-9887-8dee06d2ce2b)
+
 
 **RTL realization Output:** 
-![Screenshot 2024-11-14 134849](https://github.com/user-attachments/assets/f32fe71e-6114-401e-a5c8-9e0ede4f032e)
-
-
 **RTL**
-![Screenshot (3) - Copy](https://github.com/user-attachments/assets/a90e8adc-25b3-42ff-9a1d-caa8b1ef4a9f)
 
-
+![WhatsApp Image 2024-12-02 at 22 10 01_3466e7e1](https://github.com/user-attachments/assets/1330a4af-c852-4c15-840e-e9d3bb15eeaf)
 
 **Result:**
 thus the basic logic gates are sutied and the truth tables are verified
