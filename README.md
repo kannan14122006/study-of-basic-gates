@@ -68,7 +68,7 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
 
  Developed by: KANNAN R
  RegisterNumber: 24900979
- ```  
+  
 module Ex01(a,b,c);
  input a;
  input b;
